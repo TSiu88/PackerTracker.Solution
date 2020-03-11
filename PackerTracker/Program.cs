@@ -1,9 +1,9 @@
 using System;
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
-using ProjectName.Models;
+using PackerTracker.Models;
 
-namespace ProjectName
+namespace PackerTracker
 {
   class Program
   {

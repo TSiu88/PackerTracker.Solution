@@ -1,14 +1,14 @@
-# _Assignment Name_
+# _Packer Tracker_
 
-#### _Brief desc of Project, 02.6.2020_
+#### _Brief desc of Project, 03.11.2020_
 
-#### By _**Tiffany Siu**_
+#### By _**Tiffany Siu and Jack Dunning**_
 
 <!-- [![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive) -->
 <!-- [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) -->
 <!-- [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip) -->
-![LastCommit](https://img.shields.io/github/last-commit/tsiu88/wordcounter-csharp)
-![Languages](https://img.shields.io/github/languages/top/tsiu88/wordcounter-csharp)
+![LastCommit](https://img.shields.io/github/last-commit/JackStunning/PackerTracker.Solution)
+![Languages](https://img.shields.io/github/languages/top/JackStunning/PackerTracker.Solution)
 [![MIT license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://lbesson.mit-license.org/)
 
 ---
@@ -41,24 +41,14 @@ _README under construction_
 
 ### Instructions
 
-<!-- *This page may be viewed by:*
+*This page may be viewed by:*
 
 1. Download and install .NET Core from the [official website](https://dotnet.microsoft.com/download/dotnet-core/)
-2. Clone the [repository](https://github.com/TSiu88/csharp-bakery.git) from my [GitHub page](https://github.com/TSiu88)
+2. Clone the [repository](https://github.com/JackStunning/PackerTracker.Solution.git) from this [GitHub page](https://github.com/JackStunning)
 3. Use a command line interface to move to the repository's directory with `cd project-directory`
 4. Run `dotnet restore` and `dotnet build` in command line interface of the repository's directory
 5. Run `dotnet run` to start up the program in the command line interface
-6. Type the URL listed under "Now listening on:" into a web browser  -->
-
-<!-- 1. Download and install Node.js from the [official website](https://nodejs.org/en/download/)
-2. Clone the [repository](https://github.com/TSiu88/beep-boop.git) from my [GitHub page](https://github.com/TSiu88)
-3. Use a command line/Bash to move to the project directory with `cd project-directory`
-4. Run `npm install` to get all dependencies. 
-5. Run `npm run start` to start up the program -->
-
-<!-- _This page may be viewed by cloning the [repository](https://github.com/TSiu88/beep-boop.git) from my [GitHub page](https://github.com/TSiu88) and opening the **index.html** file in any web browser._ -->
-
-<!-- _Other things need to run like servers, databases, code, how to install and use program_ -->
+6. Type the URL listed under "Now listening on:" into a web browser 
 
 ## Other Technologies Used
 * _C#_
@@ -71,49 +61,21 @@ _README under construction_
 
 ## Specifications
 
-<!-- * _List of features the program should do, from simplest to more complex, handling all possible cases.  Can do as text or put in table, with example input and output_
-  * _Example Input: expected input_
-  * _Example Output: expected output_
-* _Example: The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels._
-  * _Example Input: 3_
-  * _Example Output: 3_
-* _Example: The program adds "way" to single-letter words beginning with a vowel._
-  * _Example Input: i_
-  * _Example Output: iway_
-* _The program adds "way" to multi-letter words beginning with a vowel._
-  * _Example Input: open_
-  * _Example Output: openway_
-* _The program takes the single consonant from the beginning of the word and adds to the end with "ay"_
-  * _Example Input: latin_
-  * _Example Output: atinlay_
-* _The program takes all consecutive consonants from the beginning of the word and adds them to the end with "ay"_
-  * _Example Input: translator_
-  * _Example Output: anslatortray_
-* _The program takes beginning consonants and if it contains "q", also take the "u" after it and add them to the end with "ay"_
-  * _Example Input: squeal_
-  * _Example Output: ealsquay_
-* _Etc._ -->
-
-<!-- <details>
-  <summary>Click to expand to view specifications</summary>
-
-| Specification | Input | Output |
-| :-------------     | :------------- | :------------- |
-| **The program displays welcome message and menu with prices** | Application start | Welcome message and menu displayed |
-| **The program displays special deals in readable format** | Application start | Special deals displayed ("Buy 2, get 1 free" "3 for $5") |
-| **The program takes input of user that is not an integer, then assume 0 ordered** | Bread="aaa", Pastry="" | Bread=0, Pastry=0 |
-| **The program takes number of loaves of bread and pastries and displays totals** | Bread=4, Pastry=4 | Bread=$20, Pastry=$8, Total=$28 |
-| **If input qualifies for special deals, costs calculated using discounted price** | Bread=3, Pastry=3 | Bread=$10, Pastry=$5, Total=$15 |
-
-</details> -->
-
-## User Stories
-
-<!-- * As a scheduler, I want to be able to organize nurses vacation schedules without much paperwork so that I can be more efficient.
-* As a scheduler, I want to see a list of requests with the overlapping dates and the nurses that sent in the requests organized by priority so I can see which staff member should have priority in getting the request approved. -->
-
-<!-- * Give stories for people who will use this project and what they'd want it to do.  Can include customers/end users, programmers that maintain code, etc. -->
-
+* _The program starts on a home page with a link allowing user to navigate to a form to add items._
+  * _Example Input: load page_
+  * _Example Output: home page shown with link to add to list_
+* _Form creates items from user input and stores the given properties in the object._
+  * _Example Input: User fills out form_
+  * _Example Output: Form creates item object_
+* _User can fill out form with item they need, if it was bought or not, if it was packed or not yet, and price._
+  * _Example Input: User fills out form_
+  * _Example Output: Information saved in list_
+* _User can view list of entries they have added through the form._
+  * _Example Input: User navigates to list page_
+  * _Example Output: List displayed by name_
+* _User can click on names of items and see details about the item._
+  * _Example Input: User clicks item on list_
+  * _Example Output: Item details displayed_
 
 ## Screenshots
 
@@ -141,10 +103,10 @@ _There are currently no known bugs in this program_
 
 ## Support and contact details
 
-_If there are any question or concerns please contact us at our emails: [Tiffany Siu](mailto:tsiu88@gmail.com). Thank you._
+_If there are any question or concerns please contact us at our emails: [Tiffany Siu](mailto:tsiu88@gmail.com) or [Jack Dunning](mailto:JackStunning9001@gmail.com). Thank you._
 
 ### License
 
 *This software is licensed under the MIT license*
 
-Copyright (c) 2020 **_Tiffany Siu_**
+Copyright (c) 2020 **_Tiffany Siu, Jack Dunning_**

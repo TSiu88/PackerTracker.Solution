@@ -1,8 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName.Models;
+using PackerTracker.Models;
 using System;
 
-namespace ProjectName.Tests
+namespace PackerTracker.Tests
 {
   [TestClass]
   public class ItemTests
@@ -11,16 +11,16 @@ namespace ProjectName.Tests
     [TestMethod]
     public void ItemConstructor_CreatesInstanceOfItem_Item()
     {
-      Item newItem = new Item("property");
-      Assert.AreEqual(typeof(Item), newItem.GetType());
+      Item newItem = new Item("name",true,true, 1);
+      string resultName = newItem.Name;
+      bool resultBought = newItem.Bought;
+      bool resultPacked = newItem.Packed;
+      int resultPrice = newItem.Price;
+      Assert.AreEqual(resultName, "name");
+      Assert.AreEqual(resultBought, true);
+      Assert.AreEqual(resultPacked, true);
+      Assert.AreEqual(resultPrice, 1);
     }
 
-    [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
-    {
-      Item newItem = new Item("property");
-      string result = newItem.Property;
-      Assert.AreEqual("Expected", result);
-    }
   }
 }
