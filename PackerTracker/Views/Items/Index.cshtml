@@ -5,12 +5,7 @@
 <h1>Packer Tracker</h1>
 @{foreach (Item item in Item.GetAll())
 {
-  <h4>@item.Name</h4>
-  <ul>
-    <li>Bought?: @item.Bought</li>
-    <li>Packed?: @item.Packed</li>
-    <li>Price?: @item.Price</li>
-  </ul>
+  <h4><a href="/items/@item.Id">@item.Name</a></h4>
 }}
 <div class="footer">
   <a href="/">Return To Home</a>
