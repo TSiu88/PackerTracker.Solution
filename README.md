@@ -73,10 +73,6 @@ _README under construction_
 * _User can view list of entries they have added through the form._
   * _Example Input: User navigates to list page_
   * _Example Output: List displayed by name_
-* _User can click on names of items and see details about the item._
-  * _Example Input: User clicks item on list_
-  * _Example Output: Item details displayed_
-
 ## Screenshots
 
 <!-- _Here is a snippet of what the input looks like:_

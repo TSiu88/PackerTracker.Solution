@@ -1,3 +1,14 @@
 @{
   Layout = "_Layout";
 }
+@using PackerTracker.Models
+<h1>@Model.Name</h1>
+<ul>
+  <li>Bought?: @Model.Bought</li>
+  <li>Packed?: @Model.Packed</li>
+  <li>Price?: @Model.Price</li>
+</ul>
+
+<div class="footer">
+  <a href="/">Return To Home</a>
+</div>

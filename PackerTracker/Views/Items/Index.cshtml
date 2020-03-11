@@ -1,15 +1,17 @@
 @{
   Layout = "_Layout";
 }
-<h1>Enter a Job Posting Here</h1>
-<form action="/item" method="post">
-  <div class="form-group">
-    <label for="formItem">Form Item</label>
-    <input id="formItem" name="formItem" type="text" required>
-  </div>
-  <button type="submit">Add</button>
-</form>
+@using PackerTracker.Models
+<h1>Packer Tracker</h1>
+@{foreach (Item item in Item.GetAll())
+{
+  <h4>@item.Name</h4>
+  <ul>
+    <li>Bought?: @item.Bought</li>
+    <li>Packed?: @item.Packed</li>
+    <li>Price?: @item.Price</li>
+  </ul>
+}}
 <div class="footer">
-  <a href="/">Return to Home</a>
-  <a href="/item">View items</a>
+  <a href="/">Return To Home</a>
 </div>

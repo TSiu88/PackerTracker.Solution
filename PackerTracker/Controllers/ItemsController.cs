@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using PackerTracker.Models;
+using System.Collections.Generic;
 
 namespace PackerTracker.Controllers
 {
@@ -15,7 +16,14 @@ namespace PackerTracker.Controllers
     public ActionResult Create(string name, bool bought, bool packed, int price) 
     { 
       Item myItem = new Item(name, bought, packed, price);
-      return View(); 
+      return RedirectToAction("Index"); 
+    }
+
+    [HttpGet("/items/{id}")]
+    public ActionResult Show(int id) 
+    { 
+      Item foundItem = Item.Find(id);
+      return View(foundItem); 
     }
 
   }
